@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //Проверяем на прав�
     // Заголовки письма
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: {$email}\r\n";
+    $headers .= "From: school23@mail.ru\r\n"; //Взял пример из чата
     $headers .= "Reply-To: {$email}\r\n";
 
     //Пробуем отправить письмо
