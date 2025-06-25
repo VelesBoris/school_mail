@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { //Проверяем на правильность метода отправки формы
     $name = htmlspecialchars(trim($_POST['name']));  //Связываем данные из формы с именем name
     $phone = htmlspecialchars(trim($_POST['phone']));  //Связываем данные из формы с именем phone
